@@ -78,12 +78,12 @@ function App() {
 
         <input className='w-64 p-1 text-sm rounded bg-orange-50 outline-orange-600 border-2 border-orange-400' type="text" id='nameInput' placeholder='Item' onChange={alterarNomeItem} />
 
-        <input className='w-32 p-1 text-sm rounded bg-orange-50 outline-orange-600 border-2 border-orange-400' type="number" id='quantityInput' placeholder='Quantidade' onChange={alterarQtdItem} onKeyDown={(evt) => ["e", "E", "+", "-","."].includes(evt.key) && evt.preventDefault()} />
+        <input className='w-32 p-1 text-sm rounded bg-orange-50 outline-orange-600 border-2 border-orange-400' type="number" id='quantityInput' placeholder='Quantidade' onChange={alterarQtdItem} onKeyPress={(evt) => !(["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"].includes(evt.key)) && evt.preventDefault()} />
 
 
         <button className='py-2 px-4 text-sm text-white rounded-lg  bg-orange-600 hover:bg-orange-400 transition duration-200' onClick={() => adicionarItemLista()}>Adicionar à lista</button>
         <button className='py-2 px-4 text-sm text-white rounded-lg  bg-orange-600 hover:bg-orange-400 transition duration-200' onClick={() => setLista([])}>Limpar lista</button>
-
+ 
         <div className='w-full flex flex-col gap-4 items-center'>
           {mostrarLista}
         </div>
