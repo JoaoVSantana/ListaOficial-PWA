@@ -84,7 +84,7 @@ function App() {
         <button className='py-2 px-4 text-sm text-white rounded-lg  bg-orange-600 hover:bg-orange-400 transition duration-200' onClick={() => adicionarItemLista()}>Adicionar à lista</button>
         <button className='py-2 px-4 text-sm text-white rounded-lg  bg-orange-600 hover:bg-orange-400 transition duration-200' onClick={() => setLista([])}>Limpar lista</button>
 
-        <div className='flex flex-col gap-4'>
+        <div className='w-full flex flex-col gap-4 items-center'>
           {mostrarLista}
         </div>
 
