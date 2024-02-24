@@ -7,16 +7,16 @@ let assets = [
   "/manifest.json",
   "/service-worker.js",
   "/src/components/index.jsx",
-  "/src/components/ListItem.css",
-  "/src/App.css",
   "/src/App.jsx",
-  "/src/index.jsx",
+  "/src/index.css",
   "/src/main.jsx",
   "/.eslintrc.cjs",
   "/index.html",
   "/package-lock.json",
   "/package.json",
   "/vite.config.js",
+  "/postcss.config.js",
+  "/tailwind.config.js",
 ]
 
 self.addEventListener('install', event => {
